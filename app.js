@@ -15,7 +15,6 @@ function updateProductNumber(product, price, isIncrease) {
 function getInputValue(product) {
   const productInput = document.getElementById(product + "_Number");
   const productNumber = parseInt(productInput.value);
-  console.log(productNumber);
   return productNumber;
 }
 //Calculation all price
@@ -34,20 +33,16 @@ function calculation() {
 //phone increase adecrease event listner
 document.getElementById("phone_ButtonP").addEventListener("click", function () {
   updateProductNumber("phone", 1219, true);
-  console.log("the  pn has clicked");
 });
 
 document.getElementById("phone_ButtonN").addEventListener("click", function () {
   updateProductNumber("phone", 1219, false);
-  console.log("the pp has clicked");
 });
 
 //case increase decrease eventListener
 document.getElementById("case_buttonP").addEventListener("click", function () {
   updateProductNumber("case", 59, true);
-  console.log("the button has clicked");
 });
 document.getElementById("case_ButtonN").addEventListener("click", function () {
   updateProductNumber("case", 59, false);
-  console.log("the button has clicked");
 });
